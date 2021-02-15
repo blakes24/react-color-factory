@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import ColorFactory from './ColorFactory';
 import Color from './Color';
+import ColorForm from './ColorForm';
 
 const Routes = ({ colorList }) => {
 	const [ colors, setColors ] = useState(colorList);
@@ -12,9 +13,9 @@ const Routes = ({ colorList }) => {
 
 	return (
 		<Switch>
-			{/* <Route exact path="/colors/new">
+			<Route exact path="/colors/new">
 				<ColorForm addColor={addColor} />
-			</Route> */}
+			</Route>
 			<Route exact path="/colors/:color">
 				<Color colors={colors} />
 			</Route>

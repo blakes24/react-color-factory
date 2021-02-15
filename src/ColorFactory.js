@@ -1,16 +1,19 @@
 import { Link } from 'react-router-dom';
+import './ColorFactory.css';
 
 const ColorFactory = ({ colors }) => {
 	return (
-		<div>
+		<div className="ColorFactory">
 			<header>
 				<h1>Welcome to the Color Factory</h1>
-				<Link to="colors/new">Add a color</Link>
+				<Link to="colors/new" className="ColorFactory-add">
+					Add a color
+				</Link>
 			</header>
-			<p>Select a color.</p>
+			<h2>Select a color.</h2>
 			<ul>
-				{colors.map((color) => (
-					<li>
+				{colors.map((color, idx) => (
+					<li key={idx}>
 						<Link to={`colors/${color.name}`}>{color.name}</Link>
 					</li>
 				))}

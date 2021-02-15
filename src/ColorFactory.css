@@ -1,0 +1,36 @@
+/* .ColorFactory {
+	background-color: rgb(187, 193, 199);
+	height: 100vh;
+} */
+
+.ColorFactory > header {
+	background-color: black;
+	color: white;
+	padding: 2rem;
+}
+
+.ColorFactory li > a {
+	color: blueviolet;
+	text-decoration: none;
+}
+.ColorFactory li > a:hover {
+	color: darkblue;
+}
+
+.ColorFactory-add {
+	color: white;
+	font-size: 2rem;
+}
+.ColorFactory-add:hover {
+	color: violet;
+}
+
+.ColorFactory ul {
+	list-style: none;
+	padding: 0;
+}
+
+.ColorFactory li {
+	margin: .5rem;
+	font-size: 1.1rem;
+}
