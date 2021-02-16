@@ -1,0 +1,25 @@
+.Color {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Color h1 {
+	margin-top: 0;
+	text-transform: capitalize;
+	font-size: 4rem;
+	color: white;
+	-webkit-text-stroke: 1px black;
+}
+
+.Color a {
+	font-size: 3rem;
+	color: white;
+	-webkit-text-stroke: 1px black;
+}
+
+.Color a:hover {
+	color: black;
+	-webkit-text-stroke: 1px white;
+}

@@ -1,4 +1,5 @@
-import { useParams, Redirect } from 'react-router-dom';
+import { useParams, Redirect, Link } from 'react-router-dom';
+import './Color.css';
 
 const Color = ({ colors }) => {
 	const { color } = useParams();
@@ -6,7 +7,10 @@ const Color = ({ colors }) => {
 	if (!currColor) return <Redirect to="/colors" />;
 	return (
 		<div className="Color" style={{ backgroundColor: currColor.color }}>
-			<h1>{currColor.name}</h1>
+			<div className="Color-text">
+				<h1>{currColor.name}</h1>
+				<Link to="/colors">Back</Link>
+			</div>
 		</div>
 	);
 };

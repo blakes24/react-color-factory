@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import './ColorForm.css';
 
 const ColorForm = ({ addColor }) => {
 	const [ formData, setFormData ] = useState({ name: '', color: '#000000' });
@@ -36,7 +37,6 @@ const ColorForm = ({ addColor }) => {
 				<input onChange={handleChange} name="color" id="color" type="color" value={formData.color} />
 				<button>Add Color</button>
 			</form>
-			<Link to="/colors">Back</Link>
 		</div>
 	);
 };

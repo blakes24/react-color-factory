@@ -1,0 +1,30 @@
+.ColorForm {
+	height: 100vh;
+	background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+
+.ColorForm h1 {
+	margin-top: 0;
+	padding-top: 3rem;
+}
+
+.ColorForm-form button {
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 5px 10px;
+	margin: 1rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ColorForm-form button:hover {
+	background-color: white;
+	color: black;
+}
+
+.ColorForm-form input {
+	margin: 5px;
+}
